@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/urban_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="YOLO"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/urban_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/urban_word"
+        android:lines="3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="You only YOLO once!"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/urban_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/urban_description"
+        android:layout_below="@+id/urban_description"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Bendik" />
+
+    <TextView
+        android:id="@+id/thumbs_up_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/urban_thumbs_up"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/urban_thumbs_up"
+        android:text="123"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <ImageView
+        android:id="@+id/urban_thumbs_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/urban_author"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/thumbs_down"
+        android:src="@drawable/thumbs_up" />
+
+    <ImageView
+        android:id="@+id/thumbs_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/urban_author"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/thumbs_down_count"
+        android:src="@drawable/thumbs_down" />
+
+
+    <TextView
+        android:id="@+id/thumbs_down_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/thumbs_up_count"
+        android:layout_alignBottom="@+id/thumbs_up_count"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:text="50" />
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UrbanDict</string>
+    <string name="title_activity_urban_word"></string>
+    <string name="hello_world">Hei Verden!</string>
+</resources>
